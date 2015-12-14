@@ -31,16 +31,14 @@ val p = kotlinProject {
 
     assemble {
         mavenJars {
+            fatJar = true
         }
     }
 
     ssh {
         name = "copySomeFile"
-        username = "someuser"
-        password = "somepass"
-        host = "somehost"
 
-        scp("/etc/passwd", "someremotefolder")
+        sshexec("ls -al")
     }
 
     jcenter {

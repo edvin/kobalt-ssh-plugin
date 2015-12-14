@@ -1,6 +1,5 @@
 package no.tornado.kobalt.plugin.ssh
 
-import com.beust.kobalt.TaskResult
 import com.beust.kobalt.api.*
 import com.beust.kobalt.api.annotation.Directive
 import javax.inject.Inject
@@ -12,9 +11,6 @@ class SSHPlugin @Inject constructor(val executor: SSHExecutor) : BasePlugin(), I
 
     companion object {
         const val PLUGIN_NAME = "SSH"
-
-        const val PROPERTY_SSH_USER = "ssh.user"
-        const val PROPERTY_SSH_PASSWORD = "ssh.password"
     }
 
     private val operations = arrayListOf<SSHConfig>()

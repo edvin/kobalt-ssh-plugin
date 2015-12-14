@@ -25,6 +25,6 @@ class SSHConfig(val project: Project) {
 }
 
 sealed class Operation {
-    class SSHExec(vararg val command: String) : Operation()
+    class SSHExec(val command: String) : Operation()
     class SCP(val file: String, val todir: String) : Operation()
 }
