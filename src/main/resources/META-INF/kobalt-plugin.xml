@@ -1,0 +1,7 @@
+<kobalt-plugin>
+    <name>ssh</name>
+    <factory-class-name>com.beust.kobalt.internal.GuiceFactory</factory-class-name>
+    <plugin-actors>
+        <class-name>no.tornado.kobalt.plugin.ssh.SSHPlugin</class-name>
+    </plugin-actors>
+</kobalt-plugin>
